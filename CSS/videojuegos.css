@@ -20,6 +20,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     padding: 15px 40px;
     background: #18181c;
     align-items: center;
@@ -32,6 +33,31 @@ body {
     justify-content: flex-start;
     gap: 15px;
 }
+
+.normal {
+    color: var(--text-gray);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.normal:hover {
+    color:var(--bg-azul)
+}
+
+.seleccionado {
+    color: var(--text-gray);
+    text-decoration: none;
+    border-bottom: 3px solid steelblue;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
 
 .logo {
     width: 35px;
@@ -113,14 +139,15 @@ body {
 }
 
 .juego-img {
-    flex: 1;    
+    flex: 1;
     background: #000;
     min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.juego-img img{
+
+.juego-img img {
     width: 100%;
     height: auto;
 }
@@ -146,7 +173,8 @@ body {
     background: #00df82;
     color: white;
 }
-.favorito{
+
+.favorito {
     background: #F096F3;
     color: black;
 }
