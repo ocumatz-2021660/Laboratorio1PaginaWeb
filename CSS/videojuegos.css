@@ -121,6 +121,115 @@ body {
     transform: rotate(5deg);
 }
 
+.contenedor-explicacion {
+    background: #18181c;
+    color: white;
+    margin: none;
+    padding: 35px 25px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: #18181c;
+}
+
+.encabezado-explicacion {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.title-explication {
+    bottom: 0;
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.encabezado-explicacion h2 {
+    color: var(--text-gray);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contenedor-porque {
+    display: flex;
+    gap: 20px;
+}
+
+.contenedor-porque-columna {
+    flex: 1;    
+}
+
+.porque-titulo {
+    font-family: "Poppins", sans-serif;
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.porque-info {
+    padding: 10px;
+}
+
+.porque-info-text {
+    display: flex;
+    gap: 15px;
+}
+
+.porque-info-img {
+    border: none;
+    padding: 5px;
+    background: transparent;
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 150px;
+    height: auto;
+    font-size: 0.8rem;
+    min-width: 200px;
+}
+
+.porque-info-tex p {
+    font-weight: 500;
+}
+
+.porque-info-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.301);
+}
+
+.porque-list {
+    padding-left: 20px;
+}
+
+.porque-list li {
+    margin-bottom: 8px;
+    color: var(--text);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .contenedor-porque {
+        flex-direction: column;
+    }
+
+    .contenedor-explicacion {
+        margin: 20px 5%;
+    }
+}
+
 .contenedor-informacion {
     padding: 40px 10%;
     display: flex;
