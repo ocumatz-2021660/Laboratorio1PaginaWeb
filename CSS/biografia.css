@@ -30,10 +30,25 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; 
     gap: 15px;
 }
 
+.nav-left h2 {
+    color: var(--text-gray);
+    text-decoration: none;
+    margin: 0; 
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .normal {
     color: var(--text-gray);
     text-decoration: none;
@@ -46,18 +61,6 @@ body {
 .normal:hover {
     color: var(--bg-azul)
 }
-
-.seleccionado {
-    color: var(--text-gray);
-    text-decoration: none;
-    border-bottom: 3px solid steelblue;
-    padding-bottom: 5px;
-    margin-right: 20px;
-    font-size: 17px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
 
 .logo {
     width: 35px;
@@ -279,6 +282,7 @@ h2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         gap: 10px;
     }
 
