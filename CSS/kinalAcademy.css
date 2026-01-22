@@ -1,0 +1,114 @@
+:root {
+    --azul-kinal: #003366;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.Encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+}
+.btn-encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.btn.menu{
+    width: 35px;
+    margin-right: 20px;
+   
+}
+.logo-home{
+    height: 35px;
+}
+
+
+.Menu-hamburgesa {
+    /*Chessburger xd*/
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.Menu-hamburgesa span {
+    width: 30px;
+    height: 4px;
+    background-color: var(--azul-kinal);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu-lista {
+    display: none;
+}
+
+.menu-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    background-color: white;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.menu-links ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-links li {
+    margin: 15px 0;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: var(--azul-kinal);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-lista:checked~.menu-links {
+    display: block;
+}
+
+.contenido {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-content h1 {
+    color: white;
+    font-size: 80px;
+    letter-spacing: 5px;
+    line-height: 0.8;
+}
+
+.text-content span {
+    font-weight: 900;
+}
