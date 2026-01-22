@@ -3,8 +3,8 @@
 :root {
     --fondo: #c5c5c5;
     --hoja: #fafafa;
-    --text: #ffffff;
-    --text-gray: #b5b5b5;
+    --text: #000000;
+    --text-gray: #000000;
     --bg-azul: #0078f2;
 }
 
@@ -12,7 +12,7 @@ body {
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
     color: #202122;
-    background-color: var(--fondo);
+    background: linear-gradient(#f1e8e0, #FCFAF5);
     margin: 0;
 }
 
@@ -21,7 +21,8 @@ body {
     justify-content: space-between;
     flex-direction: row;
     padding: 24px 40px;
-    background: #18181c;
+    background: linear-gradient(#FCFAF5,#f1e8e0);
+    border: 1px solid #a2a9b1;;
     align-items: center;
     margin-bottom: 25px;
 }
@@ -30,25 +31,27 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     gap: 15px;
 }
 
 .nav-left h2 {
     color: var(--text-gray);
     text-decoration: none;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     font-size: 24px;
     font-weight: bold;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
-.nav-right{
+
+.nav-right {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .normal {
     color: var(--text-gray);
     text-decoration: none;
@@ -213,6 +216,7 @@ h2 {
     flex-direction: row;
     gap: 25px;
 }
+
 /* Uiverse.io*/
 .button {
     display: flex;
@@ -245,15 +249,16 @@ h2 {
 .correo {
     background-color: var(--bg-azul);
 }
+
 .ventana-emergente-correo {
-    display: none; 
+    display: none;
     position: fixed;
     bottom: 10%;
     left: 40%;
     background: white;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     text-align: center;
 }
