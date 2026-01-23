@@ -356,6 +356,21 @@
     line-height: 1.5;
     margin: 0;
 }
+.basicos{
+    background-image: url(../IMG/basicos.webp);
+}
+.diversificado{
+    background-image: url(../IMG/diversificado.jpg);
+}
+.escuela-tecnica{
+    background-image: url(../IMG/tenica.jpg);
+}
+.programa-negocio{
+    background-image: url(../IMG/negocio.webp);
+}
+.universitario{
+    background-image: url(../IMG/universitario.webp);
+}
 
 .btn-curso {
     background-color: var(--fuego-kinal);
