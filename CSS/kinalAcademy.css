@@ -172,6 +172,7 @@
     background-color: var(--azul-suave);
     height: auto;
     padding: 5px 10px;
+    box-shadow: 3px 7px 10px rgb(0, 0, 0, 0.53);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,6 +273,105 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.contenedor-educacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.banner-educacion {
+    width: 90%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 80% 80% 0 0;
+}
+
+.banner-educacion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.opcionones-educacion {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.curso-contenedor {
+    background-color: #f4f4f4;    
+    border-top: 1px solid #ddd;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-contenedor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img-curso {
+    width: 100%;
+    height: 200px;
+    background-color: var(--azul-kinal);
+    background-image: url('../IMG/basicos.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.descripcion-curso {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.descripcion-curso h2 {
+    color: var(--azul-kinal);
+    font-size: 22px;
+    margin: 0;
+}
+
+.descripcion-curso p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.btn-curso {
+    background-color: var(--fuego-kinal);
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    margin-top: auto; 
+    transition: 0.3s;
+}
+
+.btn-curso:hover {
+    background-color: #e68a24; 
 }
 .contenido-footer {
     background-color: #f4f4f4;
