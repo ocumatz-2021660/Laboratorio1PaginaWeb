@@ -167,7 +167,8 @@
 .text-content span {
     font-weight: 900;
 }
-.patroncinadores{
+
+.patroncinadores {
     width: 100%;
     background-color: var(--azul-suave);
     height: auto;
@@ -179,13 +180,15 @@
     align-items: center;
     gap: 25px;
 }
-.title-patrocinadores{
+
+.title-patrocinadores {
     margin-top: 15px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 30px;
 }
-.contenedor-patrocinadores{
+
+.contenedor-patrocinadores {
     width: 80%;
     height: auto;
     padding: 5px 10px;
@@ -197,14 +200,16 @@
     gap: 35px;
     margin-bottom: 10px;
 }
-.contenedor-patrocinadores img{
+
+.contenedor-patrocinadores img {
     max-width: 100px;
     width: 75px;
     height: auto;
     filter: grayscale(100%);
     transition: 0.3s;
 }
-.contenedor-patrocinadores img:hover{    
+
+.contenedor-patrocinadores img:hover {
     filter: grayscale(0%);
     transform: translateY(-5px);
 }
@@ -212,7 +217,7 @@
 .contenido-QuienesSomos {
     width: 100%;
     background-color: #ffffff;
-    padding: 80px 0; 
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -222,13 +227,13 @@
 
 .description {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     width: 90%;
     max-width: 1100px;
-    background-color: #f4f4f4; 
-    border-radius: 20px; 
-    overflow: hidden; 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); 
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .contenedor-Descripcion {
@@ -237,7 +242,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     text-align: left;
 }
 
@@ -274,6 +279,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 .contenedor-educacion {
     width: 100%;
     display: flex;
@@ -298,6 +304,7 @@
     object-fit: cover;
     display: block;
 }
+
 .opcionones-educacion {
     width: 90%;
     max-width: 1200px;
@@ -310,7 +317,7 @@
 }
 
 .curso-contenedor {
-    background-color: #f4f4f4;    
+    background-color: #f4f4f4;
     border-top: 1px solid #ddd;
     width: 350px;
     border-radius: 15px;
@@ -330,7 +337,7 @@
     width: 100%;
     height: 200px;
     background-color: var(--azul-kinal);
-    background-image: url('../IMG/basicos.jpg'); 
+    background-image: url('../IMG/basicos.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -356,19 +363,24 @@
     line-height: 1.5;
     margin: 0;
 }
-.basicos{
+
+.basicos {
     background-image: url(../IMG/basicos.webp);
 }
-.diversificado{
+
+.diversificado {
     background-image: url(../IMG/diversificado.jpg);
 }
-.escuela-tecnica{
+
+.escuela-tecnica {
     background-image: url(../IMG/tenica.jpg);
 }
-.programa-negocio{
+
+.programa-negocio {
     background-image: url(../IMG/negocio.webp);
 }
-.universitario{
+
+.universitario {
     background-image: url(../IMG/universitario.webp);
 }
 
@@ -381,13 +393,14 @@
     font-weight: bold;
     cursor: pointer;
     align-self: center;
-    margin-top: auto; 
+    margin-top: auto;
     transition: 0.3s;
 }
 
 .btn-curso:hover {
-    background-color: #e68a24; 
+    background-color: #e68a24;
 }
+
 .contenido-footer {
     background-color: #f4f4f4;
     padding: 60px 0 20px 0;
@@ -397,7 +410,7 @@
 
 .seccion-antiguos {
     width: 100%;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     padding: 60px 0;
     display: flex;
     flex-direction: column;
@@ -426,7 +439,8 @@
     filter: grayscale(60%);
     transition: 0.5s;
 }
-.imagen-alumno img:hover{
+
+.imagen-alumno img:hover {
     transform: translateY(-5px);
     filter: grayscale(0%);
 }
@@ -435,7 +449,7 @@
     flex: 1.2;
     background-color: white;
     padding: 60px 40px;
-    margin-left: -100px; 
+    margin-left: -100px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05);
     text-align: center;
     z-index: 2;
@@ -472,15 +486,77 @@
     color: var(--fuego-kinal);
 }
 
-@media (max-width: 768px) {
-    .contenedor-antiguos {
-        flex-direction: column;
-    }
-    .tarjeta-info {
-        margin-left: 0;
-        margin-top: -50px;
-        width: 100%;
-    }
+.section-estadistica {
+    width: 100%;
+    background-color: var(--azul-kinal);
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle-estadistica {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.contenedor-estadisticas {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 20px;
+    height: 450px;
+}
+
+.contenedor-estadisticas>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ciclo-basicos {
+    background-color: #C02E5C;
+    height: 180px;
+}
+
+.ciclo-diversificado {
+    background-color: #022344;
+    height: 250px;
+}
+
+.escuela-tecnica-datos {
+    background-color: #FF9D2E;
+    height: 350px;
+}
+
+.total {
+    background-color: #E67E22;
+    height: 420px;
+}
+
+.contenedor-estadisticas h2 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.contenedor-estadisticas p {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .footer-apartados {
@@ -565,111 +641,52 @@
         flex-direction: column;
         width: 90%;
     }
-    
+
     .contenedor-img-descripcion {
-        height: 300px; 
+        height: 300px;
     }
-    
+
     .contenedor-Descripcion {
         padding: 30px;
     }
-        .contenedor-antiguos {
+
+    .contenedor-antiguos {
         flex-direction: column;
     }
+
     .tarjeta-info {
         margin-left: 0;
         margin-top: -50px;
         width: 100%;
     }
-}
-.section-estadistica {
-    width: 100%;
-    background-color: var(--azul-kinal);
-    padding: 80px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.tittle-estadistica{
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-size: 35px;
-    line-height: 0.8;
-}
 
-.contenedor-estadisticas {
-    width: 90%;
-    max-width: 1100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end; 
-    gap: 20px;
-    height: 450px; 
-}
+    .contenedor-antiguos {
+        flex-direction: column;
+    }
 
-.contenedor-estadisticas > div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px 10px 0 0; 
-    box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
-}
+    .tarjeta-info {
+        margin-left: 0;
+        margin-top: -50px;
+        width: 100%;
+    }
 
-.ciclo-basicos { 
-    background-color: #C02E5C;
-    height: 180px; 
-}
-
-.ciclo-diversificado { 
-    background-color: #022344; 
-    height: 250px; 
-}
-
-.escuela-tecnica-datos { 
-    background-color: #FF9D2E;
-    height: 350px; 
-}
-
-.total { 
-    background-color: #E67E22;
-    height: 420px; 
-}
-
-.contenedor-estadisticas h2 {
-    font-size: 45px;
-    font-weight: 900;
-    margin-bottom: 10px;
-}
-
-.contenedor-estadisticas p {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-@media (max-width: 768px) {
     .contenedor-estadisticas {
         flex-direction: column;
         height: auto;
         align-items: stretch;
     }
-    .contenedor-estadisticas > div {
-        height: 100px !important; 
+
+    .contenedor-estadisticas>div {
+        height: 100px !important;
         transform-origin: left;
         animation: crecerAncho 1s ease-out forwards;
         margin-bottom: 10px;
     }
-    .tittle-estadistica{
-    font-size: 15px;
-    margin-bottom: 25px;
-    line-height: 0.2;
-}
-    
+
+    .tittle-estadistica {
+        font-size: 15px;
+        margin-bottom: 25px;
+        line-height: 0.2;
+    }
+
 }
