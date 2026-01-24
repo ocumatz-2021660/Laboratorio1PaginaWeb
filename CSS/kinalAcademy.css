@@ -582,3 +582,94 @@
         width: 100%;
     }
 }
+.section-estadistica {
+    width: 100%;
+    background-color: var(--azul-kinal);
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tittle-estadistica{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.contenedor-estadisticas {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; 
+    gap: 20px;
+    height: 450px; 
+}
+
+.contenedor-estadisticas > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0; 
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+}
+
+.ciclo-basicos { 
+    background-color: #C02E5C;
+    height: 180px; 
+}
+
+.ciclo-diversificado { 
+    background-color: #022344; 
+    height: 250px; 
+}
+
+.escuela-tecnica-datos { 
+    background-color: #FF9D2E;
+    height: 350px; 
+}
+
+.total { 
+    background-color: #E67E22;
+    height: 420px; 
+}
+
+.contenedor-estadisticas h2 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.contenedor-estadisticas p {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .contenedor-estadisticas {
+        flex-direction: column;
+        height: auto;
+        align-items: stretch;
+    }
+    .contenedor-estadisticas > div {
+        height: 100px !important; 
+        transform-origin: left;
+        animation: crecerAncho 1s ease-out forwards;
+        margin-bottom: 10px;
+    }
+    .tittle-estadistica{
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 0.2;
+}
+    
+}
