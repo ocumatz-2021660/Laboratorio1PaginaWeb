@@ -395,6 +395,91 @@
     border-top: 1px solid #ddd;
 }
 
+.seccion-antiguos {
+    width: 100%;
+    background-color: #f0f0f0; 
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-antiguos {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.imagen-alumno {
+    flex: 1;
+    z-index: 1;
+}
+
+.imagen-alumno img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    filter: grayscale(60%);
+    transition: 0.5s;
+}
+.imagen-alumno img:hover{
+    transform: translateY(-5px);
+    filter: grayscale(0%);
+}
+
+.tarjeta-info {
+    flex: 1.2;
+    background-color: white;
+    padding: 60px 40px;
+    margin-left: -100px; 
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    z-index: 2;
+}
+
+.tarjeta-info h2 {
+    color: var(--azul-kinal);
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.tarjeta-info h2 span {
+    font-weight: 900;
+}
+
+.tarjeta-info p {
+    color: var(--azul-kinal);
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.link-trabajos {
+    text-decoration: none;
+    color: var(--azul-kinal);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.link-trabajos:hover {
+    color: var(--fuego-kinal);
+}
+
+@media (max-width: 768px) {
+    .contenedor-antiguos {
+        flex-direction: column;
+    }
+    .tarjeta-info {
+        margin-left: 0;
+        margin-top: -50px;
+        width: 100%;
+    }
+}
+
 .footer-apartados {
     max-width: 1200px;
     margin: 0 auto;
@@ -484,5 +569,13 @@
     
     .contenedor-Descripcion {
         padding: 30px;
+    }
+        .contenedor-antiguos {
+        flex-direction: column;
+    }
+    .tarjeta-info {
+        margin-left: 0;
+        margin-top: -50px;
+        width: 100%;
     }
 }
