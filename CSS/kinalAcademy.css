@@ -375,7 +375,7 @@
 .btn-curso {
     background-color: var(--fuego-kinal);
     color: black;
-    border: none;
+    border: 1px solid black;
     padding: 12px 25px;
     border-radius: 25px;
     font-weight: bold;
